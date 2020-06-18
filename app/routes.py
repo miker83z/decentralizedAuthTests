@@ -1,5 +1,5 @@
-import binascii
 import time
+import binascii
 from app import app
 from flask import request, abort, jsonify
 from umbral import pre
@@ -12,7 +12,7 @@ keyfrags = {}
 params = UmbralParameters(SECP256K1)
 
 
-@app.route('/api/keyfrags', methods=['GET'])
+@app.route('/api/keyfrags/', methods=['GET'])
 def get_keyfrag():
     if not keyfrags:
         abort(400)
@@ -29,7 +29,7 @@ def get_keyfrag():
     return jsonify(payloads), 201
 
 
-@app.route('/api/keyfrags', methods=['POST'])
+@app.route('/api/keyfrags/', methods=['POST'])
 def create_keyfrag():
     if not request.json or not 'id' in request.json or request.json['id'] in keyfrags.keys():
         abort(400)
