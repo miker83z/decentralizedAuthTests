@@ -25,8 +25,10 @@ $ flask run -h 0.0.0.0 -p 5022
 ```
 
 **Client**
+
 Needs nodes address in _client/nodes.txt_
-Neets setting flags in _client/client.py_
+
+Needs setting flags in _client/client.py_
 
 ```
 $ cd client/
