@@ -12,14 +12,15 @@ import csv
 nodes = open('nodes.txt').read().splitlines()
 api_call = '/api/keyfrags/'
 
-nodes_num = len(nodes)
-threshold = 1
-step_it = 1
-max_it = 3
-threshold_flag = True
+# Flags
+threshold_init = 2
+step_it = 20
+max_it = 30
+threshold_flag = False
 show_latency_flag = False
 show_debug_flag = False
 
+nodes_num = len(nodes)
 params = UmbralParameters(SECP256K1)
 
 
@@ -221,6 +222,7 @@ def main():
                 threshold = x
                 plaintext = ''.join('x' for _ in range(30)).encode()
             else:
+                threshold = threshold_init
                 plaintext = ''.join('x' for _ in range(x)).encode()
             # Alice #####################################################
             # ENCRYPTION
