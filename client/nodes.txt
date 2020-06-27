@@ -1,2 +1,5 @@
-http://localhost:5022
-http://zuniga.cs.unibo.it:5022/
+localhost
+zuniga.cs.unibo.it
+turiddo.cs.unibo.it
+zita.cs.unibo.it
+attila.cs.unibo.it

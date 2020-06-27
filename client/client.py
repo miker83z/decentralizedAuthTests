@@ -8,8 +8,9 @@ from umbral.curve import SECP256K1
 from umbral.params import UmbralParameters
 import csv
 
-
+port = "5022"
 nodes = open('nodes.txt').read().splitlines()
+nodes = ["http://" + node + ":" + port for node in nodes]
 api_call = '/api/keyfrags/'
 
 # Flags
