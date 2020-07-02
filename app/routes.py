@@ -45,13 +45,16 @@ def create_keyfrag():
     }
     print('-- Delegating:' + request.json['delegating'])
     print('-- Receiving:' + request.json['receiving'])
+    now = time.time()*1000
     keyfrags[k_id]['capsule'].set_correctness_keys(delegating=keyfrags[k_id]['delegating'],
                                                    receiving=keyfrags[k_id]['receiving'],
                                                    verifying=keyfrags[k_id]['verifying'])
     keyfrags[k_id]['rekeyfrag'] = pre.reencrypt(kfrag=keyfrags[k_id]['keyfrag'],
                                                 capsule=keyfrags[k_id]['capsule'])
+    end = time.time()*1000
+    enc_tot = end-now
     print("-- Re-encrypted key fragment with id: " + str(k_id))
-    return jsonify({'result': 'ok'}), 201
+    return jsonify({'time': enc_tot}), 201
 
 
 @app.route('/api/keyfrags/<int:kfrag_id>', methods=['GET'])
