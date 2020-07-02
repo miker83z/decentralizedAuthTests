@@ -6,5 +6,5 @@ NUMBER_OF_NODES=$1
 for (( i = 1; i < $NUMBER_OF_NODES; i++ ))
 do
   echo "${HOSTS[$i]}"
-  ssh -l $USERNAME ${HOSTS[$i]} ./knetest.sh
+  ssh -o StrictHostKeyChecking=no -l $USERNAME ${HOSTS[$i]} "killall flask"
 done
