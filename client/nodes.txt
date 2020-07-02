@@ -1,1 +1,3 @@
 127.0.0.1
+zuniga.cs.unibo.it
+turiddo.cs.unibo.it
