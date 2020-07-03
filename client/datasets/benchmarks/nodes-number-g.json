@@ -1,0 +1,32 @@
+[
+  {
+    "encryption": 103,
+    "decryption": 91,
+    "number": 5,
+    "total": 194
+  },
+  {
+    "encryption": 121,
+    "decryption": 90,
+    "number": 10,
+    "total": 211
+  },
+  {
+    "encryption": 135,
+    "decryption": 92,
+    "number": 15,
+    "total": 227
+  },
+  {
+    "encryption": 149,
+    "decryption": 95,
+    "number": 20,
+    "total": 244
+  },
+  {
+    "encryption": 165,
+    "decryption": 95,
+    "number": 25,
+    "total": 260
+  }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "length": 10,
+    "encryption": 169,
+    "decryption": 97,
+    "total": 267
+  },
+  {
+    "length": 50,
+    "encryption": 162,
+    "decryption": 97,
+    "total": 259
+  },
+  {
+    "length": 100,
+    "encryption": 161,
+    "decryption": 98,
+    "total": 259
+  },
+  {
+    "length": 500,
+    "encryption": 162,
+    "decryption": 96,
+    "total": 258
+  },
+  {
+    "length": 1000,
+    "encryption": 269,
+    "decryption": 98,
+    "total": 367
+  },
+  {
+    "length": 5000,
+    "encryption": 162,
+    "decryption": 97,
+    "total": 259
+  },
+  {
+    "length": 10000,
+    "encryption": 167,
+    "decryption": 96,
+    "total": 263
+  },
+  {
+    "length": 50000,
+    "encryption": 161,
+    "decryption": 98,
+    "total": 259
+  },
+  {
+    "length": 100000,
+    "encryption": 162,
+    "decryption": 97,
+    "total": 259
+  },
+  {
+    "length": 500000,
+    "encryption": 164,
+    "decryption": 97,
+    "total": 261
+  },
+  {
+    "length": 1000000,
+    "encryption": 162,
+    "decryption": 97,
+    "total": 259
+  }
+]

@@ -1,0 +1,146 @@
+[
+  {
+    "threshold": 2,
+    "encryption": 162,
+    "decryption": 87,
+    "total": 249
+  },
+  {
+    "threshold": 3,
+    "encryption": 165,
+    "decryption": 98,
+    "total": 263
+  },
+  {
+    "threshold": 4,
+    "encryption": 164,
+    "decryption": 108,
+    "total": 272
+  },
+  {
+    "threshold": 5,
+    "encryption": 163,
+    "decryption": 118,
+    "total": 281
+  },
+  {
+    "threshold": 6,
+    "encryption": 175,
+    "decryption": 129,
+    "total": 304
+  },
+  {
+    "threshold": 7,
+    "encryption": 164,
+    "decryption": 142,
+    "total": 306
+  },
+  {
+    "threshold": 8,
+    "encryption": 168,
+    "decryption": 155,
+    "total": 323
+  },
+  {
+    "threshold": 9,
+    "encryption": 167,
+    "decryption": 169,
+    "total": 336
+  },
+  {
+    "threshold": 10,
+    "encryption": 166,
+    "decryption": 180,
+    "total": 346
+  },
+  {
+    "threshold": 11,
+    "encryption": 169,
+    "decryption": 195,
+    "total": 364
+  },
+  {
+    "threshold": 12,
+    "encryption": 169,
+    "decryption": 202,
+    "total": 371
+  },
+  {
+    "threshold": 13,
+    "encryption": 169,
+    "decryption": 219,
+    "total": 388
+  },
+  {
+    "threshold": 14,
+    "encryption": 171,
+    "decryption": 227,
+    "total": 398
+  },
+  {
+    "threshold": 15,
+    "encryption": 169,
+    "decryption": 242,
+    "total": 411
+  },
+  {
+    "threshold": 16,
+    "encryption": 171,
+    "decryption": 254,
+    "total": 425
+  },
+  {
+    "threshold": 17,
+    "encryption": 179,
+    "decryption": 263,
+    "total": 442
+  },
+  {
+    "threshold": 18,
+    "encryption": 172,
+    "decryption": 278,
+    "total": 450
+  },
+  {
+    "threshold": 19,
+    "encryption": 174,
+    "decryption": 282,
+    "total": 466
+  },
+  {
+    "threshold": 20,
+    "encryption": 181,
+    "decryption": 307,
+    "total": 488
+  },
+  {
+    "threshold": 21,
+    "encryption": 284,
+    "decryption": 324,
+    "total": 608
+  },
+  {
+    "threshold": 22,
+    "encryption": 177,
+    "decryption": 330,
+    "total": 507
+  },
+  {
+    "threshold": 23,
+    "encryption": 179,
+    "decryption": 349,
+    "total": 528
+  },
+  {
+    "threshold": 24,
+    "encryption": 176,
+    "decryption": 357,
+    "total": 533
+  },
+  {
+    "threshold": 25,
+    "encryption": 179,
+    "decryption": 374,
+    "total": 553
+  }
+]
