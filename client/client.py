@@ -153,8 +153,6 @@ def distribute_key_fragments(k_id, kfrags, payload, threshold):
         loop.stop()
         loop.close()
 
-    print(listko)
-
     distr_success = nodes_num - listko.count(None)
     if distr_success >= threshold:
         show_debug(
