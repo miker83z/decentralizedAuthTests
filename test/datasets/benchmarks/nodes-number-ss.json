@@ -1,0 +1,7 @@
+[
+  { "encryption": 397, "decryption": 148, "number": 5, "set_access": 29 },
+  { "encryption": 549, "decryption": 148, "number": 10, "set_access": 30 },
+  { "encryption": 666, "decryption": 175, "number": 15, "set_access": 29 },
+  { "encryption": 843, "decryption": 178, "number": 20, "set_access": 30 },
+  { "encryption": 952, "decryption": 188, "number": 25, "set_access": 30 }
+]

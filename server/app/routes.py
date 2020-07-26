@@ -8,6 +8,8 @@ from umbral.keys import UmbralPublicKey
 from umbral.curve import SECP256K1
 from umbral.params import UmbralParameters
 
+show_debug_flag = False
+
 keyfrags = {}
 params = UmbralParameters(SECP256K1)
 
@@ -16,7 +18,7 @@ params = UmbralParameters(SECP256K1)
 def get_keyfrag():
     if not keyfrags:
         abort(400)
-    print('Returning all the key fragments objects stored...')
+    show_debug('Returning all the key fragments objects stored...')
     payloads = {}
     for kfrag in keyfrags.keys():
         payloads[kfrag] = {
@@ -34,7 +36,7 @@ def create_keyfrag():
     if not request.json or not 'id' in request.json or request.json['id'] in keyfrags.keys():
         abort(400)
     k_id = request.json['id']
-    print("Storing key fragment with id: " + str(k_id))
+    show_debug("Storing key fragment with id: " + str(k_id))
     keyfrags[k_id] = {
         'capsule': pre.Capsule.from_bytes(binascii.unhexlify(request.json['capsule'].encode()), params),
         'keyfrag': KFrag.from_bytes(binascii.unhexlify(request.json['keyfrag'].encode()), SECP256K1),
@@ -43,8 +45,8 @@ def create_keyfrag():
         'verifying': UmbralPublicKey.from_bytes(binascii.unhexlify(request.json['verifying'].encode()), params),
         'rekeyfrag': None
     }
-    print('-- Delegating:' + request.json['delegating'])
-    print('-- Receiving:' + request.json['receiving'])
+    show_debug('-- Delegating:' + request.json['delegating'])
+    show_debug('-- Receiving:' + request.json['receiving'])
     now = time.time()*1000
     keyfrags[k_id]['capsule'].set_correctness_keys(delegating=keyfrags[k_id]['delegating'],
                                                    receiving=keyfrags[k_id]['receiving'],
@@ -53,7 +55,7 @@ def create_keyfrag():
                                                 capsule=keyfrags[k_id]['capsule'])
     end = time.time()*1000
     enc_tot = end-now
-    print("-- Re-encrypted key fragment with id: " + str(k_id))
+    show_debug("-- Re-encrypted key fragment with id: " + str(k_id))
     return jsonify({'time': enc_tot}), 201
 
 
@@ -61,7 +63,12 @@ def create_keyfrag():
 def get_task(kfrag_id):
     if not kfrag_id in keyfrags.keys():
         abort(400)
-    print('Returning re-key fragment with id: ' + str(kfrag_id))
+    show_debug('Returning re-key fragment with id: ' + str(kfrag_id))
     payload = binascii.hexlify(
         keyfrags[kfrag_id]['rekeyfrag'].to_bytes()).decode()
     return jsonify({'rekeyfrag': payload})
+
+
+def show_debug(message):
+    if show_debug_flag:
+        print(message)

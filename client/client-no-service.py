@@ -32,12 +32,12 @@ try:
                                "threshold=", "step=", "limit="])
 except getopt.GetoptError:
     print(
-        '-m --message\n-x --fixed\n-l --latency\n-d --debug \n-t --threshold <value>\n-s --step <value>\n-f --final <value>')
+        '-m --message\n-x --fixed\n-f --latency\n-d --debug \n-t --threshold <value>\n-s --step <value>\n-f --final <value>')
     sys.exit(2)
 for opt, arg in opts:
     if opt == '-h':
         print(
-            '-m --message\n-x --fixed\n-l --latency\n-d --debug \n-t --threshold <value>\n-s --step <value>\n-f --final <value>')
+            '-m --message\n-x --fixed\n-f --latency\n-d --debug \n-t --threshold <value>\n-s --step <value>\n-f --final <value>')
         sys.exit()
     elif opt in ("-m", "--message"):
         threshold_flag = False

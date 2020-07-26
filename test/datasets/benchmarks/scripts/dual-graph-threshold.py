@@ -7,8 +7,15 @@ import json
 import sys
 
 x_data = np.arange(2, 26, 1)
+check_permission_error = 65
 
-stats_file = sys.argv[1]
+if len(sys.argv) > 2:
+    stats_file = sys.argv[1]
+    stats_file2 = sys.argv[2]
+else:
+    stats_file = '../threshold-ss.json'
+    stats_file2 = '../threshold-pre.json'
+
 with open(stats_file) as json_file:
     data = json.load(json_file)
 enc = []
@@ -30,7 +37,6 @@ dec_est = a * x_data + b
 a, b = np.polyfit(x_data, tot, deg=1)
 tot_est = a * x_data + b
 
-stats_file2 = sys.argv[2]
 with open(stats_file2) as json_file:
     data2 = json.load(json_file)
 enc2 = []
@@ -38,8 +44,9 @@ dec2 = []
 tot2 = []
 for item in data2:
     enc2.append(item['encryption'])
-    dec2.append(item['decryption'])
-    tot2.append(item['decryption'] + item['encryption'])
+    dec2.append(item['decryption'] + check_permission_error)
+    tot2.append(item['decryption'] +
+                check_permission_error + item['encryption'])
 # means.sort()
 # median.sort()
 enc2 = np.array(enc2)
@@ -75,7 +82,7 @@ plt.plot(x_data, dec2, '*', color='tab:orange', label='decryption')
 plt.plot(x_data, tot2, 's', color='tab:orange', label='total')
 
 #plt.yticks(np.arange(0, 1200, 100))
-plt.xticks(np.arange(0, 25, 2))
+plt.xticks(np.arange(1, 26, 2))
 plt.ylabel('time [ms]')
 plt.xlabel('threshold')
 
@@ -84,7 +91,7 @@ plt.grid(axis='x', color='0.95')
 star = mlines.Line2D([], [], color='w', marker='*', linestyle='None', markeredgecolor='black',
                      markersize=7, label='decryption')
 circle = mlines.Line2D([], [], color='w', marker='o', linestyle='None', markeredgecolor='black',
-                       markersize=7, label='enctyption')
+                       markersize=7, label='encryption')
 square = mlines.Line2D([], [], color='w', marker='s', linestyle='None', markeredgecolor='black',
                        markersize=7, label='total')
 patch1 = mpatches.Patch(color='tab:blue', label='SecretStore')
@@ -94,5 +101,5 @@ plt.legend(handles=[patch1, patch2,
                     star, circle, square])
 
 # display the plot
-plt.savefig('../dual-threshold-nodes-number-graph.png',
+plt.savefig('../dual-threshold-graph.png',
             bbox_inches='tight', dpi=200)

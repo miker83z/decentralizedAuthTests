@@ -10,8 +10,15 @@ x_data_int = np.array([10, 50, 100, 500, 1000, 5000,
                        10000, 50000, 100000, 500000, 1000000])
 x_data = np.array(['10\nB', '50\nB', '100\nB', '500\nB', '1\nKB',
                    '5\nKB', '10\nKB', '50\nKB', '100\nKB', '500\nKB', '1\nMB'])
+check_permission_error = 65
 
-stats_file = sys.argv[1]
+if len(sys.argv) > 2:
+    stats_file = sys.argv[1]
+    stats_file2 = sys.argv[2]
+else:
+    stats_file = '../message-length-ss.json'
+    stats_file2 = '../message-length-pre.json'
+
 with open(stats_file) as json_file:
     data = json.load(json_file)
 enc = []
@@ -33,7 +40,6 @@ dec_est = a * x_data_int + b
 a, b = np.polyfit(x_data_int, tot, deg=1)
 tot_est = a * x_data_int + b
 
-stats_file2 = sys.argv[2]
 with open(stats_file2) as json_file:
     data2 = json.load(json_file)
 enc2 = []
@@ -41,8 +47,9 @@ dec2 = []
 tot2 = []
 for item in data2:
     enc2.append(item['encryption'])
-    dec2.append(item['decryption'])
-    tot2.append(item['decryption'] + item['encryption'])
+    dec2.append(item['decryption'] + check_permission_error)
+    tot2.append(item['decryption'] +
+                check_permission_error + item['encryption'])
 # means.sort()
 # median.sort()
 enc2 = np.array(enc2)
@@ -88,7 +95,7 @@ plt.xlabel('length of message')
 star = mlines.Line2D([], [], color='w', marker='*', linestyle='None', markeredgecolor='black',
                      markersize=7, label='decryption')
 circle = mlines.Line2D([], [], color='w', marker='o', linestyle='None', markeredgecolor='black',
-                       markersize=7, label='enctyption')
+                       markersize=7, label='encryption')
 square = mlines.Line2D([], [], color='w', marker='s', linestyle='None', markeredgecolor='black',
                        markersize=7, label='total')
 patch1 = mpatches.Patch(color='tab:blue', label='SecretStore')
