@@ -119,7 +119,7 @@ def decrypt_r():
     dec_tot = end-now
     show_debug('Decrypted in (ms)= ' + str(dec_tot))
 
-    return jsonify({'plain': plaintext_b, 'cfr_time': cfr_tot, 'dec_time': dec_tot}), 201
+    return jsonify({'plain': plaintext_b.decode(), 'cfr_time': cfr_tot, 'dec_time': dec_tot}), 201
 
 
 def show_debug(message):

@@ -26,6 +26,7 @@ done
 
 cd ..
 source venv/bin/activate
+cd server
 flask run -h 0.0.0.0 -p 5022
 
 for (( i = 1; i < $NUMBER_OF_NODES; i++ ))

@@ -96,7 +96,6 @@ def setup():
 
 
 def main():
-    print('hello')
     # SETUP
     (pk_a, sk_a, sign_a, verify_a, pk_b, sk_b) = setup()
 
