@@ -1,0 +1,7 @@
+[
+  { "nodes": 5, "encryption": 397, "decryption": 148 },
+  { "nodes": 10, "encryption": 549, "decryption": 148 },
+  { "nodes": 15, "encryption": 666, "decryption": 175 },
+  { "nodes": 20, "encryption": 843, "decryption": 178 },
+  { "nodes": 25, "encryption": 952, "decryption": 188 }
+]

@@ -1,0 +1,177 @@
+[
+  {
+    "threshold": 1,
+    "encryption": 7,
+    "keys": 168,
+    "decryption": 50,
+    "total": 225
+  },
+  {
+    "threshold": 2,
+    "encryption": 7,
+    "keys": 168,
+    "decryption": 96,
+    "total": 271
+  },
+  {
+    "threshold": 3,
+    "encryption": 7,
+    "keys": 168,
+    "decryption": 103,
+    "total": 278
+  },
+  {
+    "threshold": 4,
+    "encryption": 7,
+    "keys": 167,
+    "decryption": 116,
+    "total": 290
+  },
+  {
+    "threshold": 5,
+    "encryption": 7,
+    "keys": 169,
+    "decryption": 127,
+    "total": 303
+  },
+  {
+    "threshold": 6,
+    "encryption": 7,
+    "keys": 171,
+    "decryption": 139,
+    "total": 317
+  },
+  {
+    "threshold": 7,
+    "encryption": 7,
+    "keys": 169,
+    "decryption": 152,
+    "total": 328
+  },
+  {
+    "threshold": 8,
+    "encryption": 7,
+    "keys": 176,
+    "decryption": 163,
+    "total": 346
+  },
+  {
+    "threshold": 9,
+    "encryption": 7,
+    "keys": 172,
+    "decryption": 174,
+    "total": 353
+  },
+  {
+    "threshold": 10,
+    "encryption": 7,
+    "keys": 175,
+    "decryption": 186,
+    "total": 368
+  },
+  {
+    "threshold": 11,
+    "encryption": 7,
+    "keys": 174,
+    "decryption": 198,
+    "total": 379
+  },
+  {
+    "threshold": 12,
+    "encryption": 7,
+    "keys": 174,
+    "decryption": 212,
+    "total": 393
+  },
+  {
+    "threshold": 13,
+    "encryption": 7,
+    "keys": 180,
+    "decryption": 220,
+    "total": 407
+  },
+  {
+    "threshold": 14,
+    "encryption": 7,
+    "keys": 174,
+    "decryption": 234,
+    "total": 415
+  },
+  {
+    "threshold": 15,
+    "encryption": 7,
+    "keys": 176,
+    "decryption": 242,
+    "total": 425
+  },
+  {
+    "threshold": 16,
+    "encryption": 7,
+    "keys": 176,
+    "decryption": 254,
+    "total": 437
+  },
+  {
+    "threshold": 17,
+    "encryption": 7,
+    "keys": 176,
+    "decryption": 271,
+    "total": 454
+  },
+  {
+    "threshold": 18,
+    "encryption": 7,
+    "keys": 179,
+    "decryption": 280,
+    "total": 466
+  },
+  {
+    "threshold": 19,
+    "encryption": 7,
+    "keys": 179,
+    "decryption": 293,
+    "total": 479
+  },
+  {
+    "threshold": 20,
+    "encryption": 7,
+    "keys": 178,
+    "decryption": 306,
+    "total": 491
+  },
+  {
+    "threshold": 21,
+    "encryption": 7,
+    "keys": 176,
+    "decryption": 325,
+    "total": 508
+  },
+  {
+    "threshold": 22,
+    "encryption": 7,
+    "keys": 178,
+    "decryption": 332,
+    "total": 517
+  },
+  {
+    "threshold": 23,
+    "encryption": 7,
+    "keys": 177,
+    "decryption": 348,
+    "total": 532
+  },
+  {
+    "threshold": 24,
+    "encryption": 7,
+    "keys": 181,
+    "decryption": 358,
+    "total": 546
+  },
+  {
+    "threshold": 25,
+    "encryption": 7,
+    "keys": 183,
+    "decryption": 373,
+    "total": 563
+  }
+]

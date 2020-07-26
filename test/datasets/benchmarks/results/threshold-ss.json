@@ -1,0 +1,152 @@
+[
+  {
+    "threshold": 1,
+    "encryption": 53,
+    "keys": 960,
+    "decryption": 25
+  },
+  {
+    "threshold": 2,
+    "encryption": 53,
+    "keys": 967,
+    "decryption": 121
+  },
+  {
+    "threshold": 3,
+    "encryption": 52,
+    "keys": 965,
+    "decryption": 127
+  },
+  {
+    "threshold": 4,
+    "encryption": 52,
+    "keys": 969,
+    "decryption": 195
+  },
+  {
+    "threshold": 5,
+    "encryption": 52,
+    "keys": 972,
+    "decryption": 192
+  },
+  {
+    "threshold": 6,
+    "encryption": 52,
+    "keys": 979,
+    "decryption": 236
+  },
+  {
+    "threshold": 7,
+    "encryption": 52,
+    "keys": 976,
+    "decryption": 212
+  },
+  {
+    "threshold": 8,
+    "encryption": 52,
+    "keys": 963,
+    "decryption": 208
+  },
+  {
+    "threshold": 9,
+    "encryption": 52,
+    "keys": 962,
+    "decryption": 226
+  },
+  {
+    "threshold": 10,
+    "encryption": 52,
+    "keys": 965,
+    "decryption": 233
+  },
+  {
+    "threshold": 11,
+    "encryption": 53,
+    "keys": 966,
+    "decryption": 241
+  },
+  {
+    "threshold": 12,
+    "encryption": 52,
+    "keys": 968,
+    "decryption": 252
+  },
+  {
+    "threshold": 13,
+    "encryption": 53,
+    "keys": 970,
+    "decryption": 269
+  },
+  {
+    "threshold": 14,
+    "encryption": 52,
+    "keys": 975,
+    "decryption": 272
+  },
+  {
+    "threshold": 15,
+    "encryption": 52,
+    "keys": 978,
+    "decryption": 265
+  },
+  {
+    "threshold": 16,
+    "encryption": 53,
+    "keys": 981,
+    "decryption": 293
+  },
+  {
+    "threshold": 17,
+    "encryption": 53,
+    "keys": 976,
+    "decryption": 324
+  },
+  {
+    "threshold": 18,
+    "encryption": 53,
+    "keys": 980,
+    "decryption": 337
+  },
+  {
+    "threshold": 19,
+    "encryption": 53,
+    "keys": 986,
+    "decryption": 340
+  },
+  {
+    "threshold": 20,
+    "encryption": 53,
+    "keys": 992,
+    "decryption": 349
+  },
+  {
+    "threshold": 21,
+    "encryption": 54,
+    "keys": 997,
+    "decryption": 363
+  },
+  {
+    "threshold": 22,
+    "encryption": 53,
+    "keys": 1001,
+    "decryption": 373
+  },
+  {
+    "threshold": 23,
+    "encryption": 53,
+    "keys": 1007,
+    "decryption": 379
+  },
+  {
+    "threshold": 24,
+    "encryption": 53,
+    "keys": 1011,
+    "decryption": 363
+  },
+  {
+    "threshold": 25,
+    "encryption": 53,
+    "keys": 1016,
+    "decryption": 371
+  }
+]

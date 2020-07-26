@@ -1,0 +1,52 @@
+[
+  {
+    "threshold": 3,
+    "encryption_tot": 7,
+    "kfrags_gen_tot": 113,
+    "kfrags_reenc": 13,
+    "kfrags_dist": 101,
+    "decryption_tot": 99,
+    "cfrags_gen": 60,
+    "total": 219
+  },
+  {
+    "threshold": 3,
+    "encryption_tot": 7,
+    "kfrags_gen_tot": 128,
+    "kfrags_reenc": 13,
+    "kfrags_dist": 105,
+    "decryption_tot": 96,
+    "cfrags_gen": 57,
+    "total": 231
+  },
+  {
+    "threshold": 3,
+    "encryption_tot": 8,
+    "kfrags_gen_tot": 139,
+    "kfrags_reenc": 12,
+    "kfrags_dist": 107,
+    "decryption_tot": 103,
+    "cfrags_gen": 62,
+    "total": 250
+  },
+  {
+    "threshold": 3,
+    "encryption_tot": 7,
+    "kfrags_gen_tot": 156,
+    "kfrags_reenc": 13,
+    "kfrags_dist": 113,
+    "decryption_tot": 103,
+    "cfrags_gen": 63,
+    "total": 266
+  },
+  {
+    "threshold": 3,
+    "encryption_tot": 8,
+    "kfrags_gen_tot": 167,
+    "kfrags_reenc": 10,
+    "kfrags_dist": 114,
+    "decryption_tot": 105,
+    "cfrags_gen": 65,
+    "total": 280
+  }
+]

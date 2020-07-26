@@ -1,0 +1,37 @@
+[
+  {
+    "nodes": 5,
+    "encryption": 7,
+    "keys": 113,
+    "decryption": 99,
+    "total": 219
+  },
+  {
+    "nodes": 10,
+    "encryption": 7,
+    "keys": 128,
+    "decryption": 96,
+    "total": 231
+  },
+  {
+    "nodes": 15,
+    "encryption": 8,
+    "keys": 139,
+    "decryption": 103,
+    "total": 250
+  },
+  {
+    "nodes": 20,
+    "encryption": 7,
+    "keys": 156,
+    "decryption": 103,
+    "total": 266
+  },
+  {
+    "nodes": 25,
+    "encryption": 8,
+    "keys": 167,
+    "decryption": 105,
+    "total": 280
+  }
+]

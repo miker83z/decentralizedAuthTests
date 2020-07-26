@@ -1,252 +1,252 @@
 [
   {
     "threshold": 1,
-    "encryption": 7,
-    "kfrags_gen": 168,
+    "encryption_tot": 7,
+    "kfrags_gen_tot": 168,
     "kfrags_reenc": 13,
     "kfrags_dist": 116,
+    "decryption_tot": 50,
     "cfrags_gen": 30,
-    "decryption": 50,
-    "total": 374
+    "total": 225
   },
   {
     "threshold": 2,
-    "encryption": 7,
-    "kfrags_gen": 168,
+    "encryption_tot": 7,
+    "kfrags_gen_tot": 168,
     "kfrags_reenc": 13,
     "kfrags_dist": 114,
+    "decryption_tot": 96,
     "cfrags_gen": 64,
-    "decryption": 96,
-    "total": 451
+    "total": 271
   },
   {
     "threshold": 3,
-    "encryption": 7,
-    "kfrags_gen": 168,
+    "encryption_tot": 7,
+    "kfrags_gen_tot": 168,
     "kfrags_reenc": 13,
     "kfrags_dist": 115,
+    "decryption_tot": 103,
     "cfrags_gen": 63,
-    "decryption": 103,
-    "total": 458
+    "total": 278
   },
   {
     "threshold": 4,
-    "encryption": 7,
-    "kfrags_gen": 167,
+    "encryption_tot": 7,
+    "kfrags_gen_tot": 167,
     "kfrags_reenc": 13,
     "kfrags_dist": 113,
+    "decryption_tot": 116,
     "cfrags_gen": 66,
-    "decryption": 116,
-    "total": 471
+    "total": 290
   },
   {
     "threshold": 5,
-    "encryption": 7,
-    "kfrags_gen": 169,
+    "encryption_tot": 7,
+    "kfrags_gen_tot": 169,
     "kfrags_reenc": 13,
     "kfrags_dist": 115,
+    "decryption_tot": 127,
     "cfrags_gen": 67,
-    "decryption": 127,
-    "total": 486
+    "total": 303
   },
   {
     "threshold": 6,
-    "encryption": 7,
-    "kfrags_gen": 171,
+    "encryption_tot": 7,
+    "kfrags_gen_tot": 171,
     "kfrags_reenc": 13,
     "kfrags_dist": 116,
+    "decryption_tot": 139,
     "cfrags_gen": 68,
-    "decryption": 139,
-    "total": 503
+    "total": 317
   },
   {
     "threshold": 7,
-    "encryption": 7,
-    "kfrags_gen": 169,
+    "encryption_tot": 7,
+    "kfrags_gen_tot": 169,
     "kfrags_reenc": 13,
     "kfrags_dist": 114,
+    "decryption_tot": 152,
     "cfrags_gen": 72,
-    "decryption": 152,
-    "total": 517
+    "total": 328
   },
   {
     "threshold": 8,
-    "encryption": 7,
-    "kfrags_gen": 176,
+    "encryption_tot": 7,
+    "kfrags_gen_tot": 176,
     "kfrags_reenc": 13,
     "kfrags_dist": 119,
+    "decryption_tot": 163,
     "cfrags_gen": 73,
-    "decryption": 163,
-    "total": 540
+    "total": 346
   },
   {
     "threshold": 9,
-    "encryption": 7,
-    "kfrags_gen": 172,
+    "encryption_tot": 7,
+    "kfrags_gen_tot": 172,
     "kfrags_reenc": 13,
     "kfrags_dist": 115,
+    "decryption_tot": 174,
     "cfrags_gen": 73,
-    "decryption": 174,
-    "total": 543
+    "total": 353
   },
   {
     "threshold": 10,
-    "encryption": 7,
-    "kfrags_gen": 175,
+    "encryption_tot": 7,
+    "kfrags_gen_tot": 175,
     "kfrags_reenc": 13,
     "kfrags_dist": 118,
+    "decryption_tot": 186,
     "cfrags_gen": 75,
-    "decryption": 186,
-    "total": 564
+    "total": 368
   },
   {
     "threshold": 11,
-    "encryption": 7,
-    "kfrags_gen": 174,
+    "encryption_tot": 7,
+    "kfrags_gen_tot": 174,
     "kfrags_reenc": 13,
     "kfrags_dist": 115,
+    "decryption_tot": 198,
     "cfrags_gen": 76,
-    "decryption": 198,
-    "total": 572
+    "total": 379
   },
   {
     "threshold": 12,
-    "encryption": 7,
-    "kfrags_gen": 174,
+    "encryption_tot": 7,
+    "kfrags_gen_tot": 174,
     "kfrags_reenc": 13,
     "kfrags_dist": 115,
+    "decryption_tot": 212,
     "cfrags_gen": 79,
-    "decryption": 212,
-    "total": 590
+    "total": 393
   },
   {
     "threshold": 13,
-    "encryption": 7,
-    "kfrags_gen": 180,
+    "encryption_tot": 7,
+    "kfrags_gen_tot": 180,
     "kfrags_reenc": 13,
     "kfrags_dist": 121,
+    "decryption_tot": 220,
     "cfrags_gen": 77,
-    "decryption": 220,
-    "total": 607
+    "total": 407
   },
   {
     "threshold": 14,
-    "encryption": 7,
-    "kfrags_gen": 174,
+    "encryption_tot": 7,
+    "kfrags_gen_tot": 174,
     "kfrags_reenc": 13,
     "kfrags_dist": 115,
+    "decryption_tot": 234,
     "cfrags_gen": 80,
-    "decryption": 234,
-    "total": 612
+    "total": 415
   },
   {
     "threshold": 15,
-    "encryption": 7,
-    "kfrags_gen": 176,
+    "encryption_tot": 7,
+    "kfrags_gen_tot": 176,
     "kfrags_reenc": 13,
     "kfrags_dist": 116,
+    "decryption_tot": 242,
     "cfrags_gen": 78,
-    "decryption": 242,
-    "total": 621
+    "total": 425
   },
   {
     "threshold": 16,
-    "encryption": 7,
-    "kfrags_gen": 176,
+    "encryption_tot": 7,
+    "kfrags_gen_tot": 176,
     "kfrags_reenc": 12,
     "kfrags_dist": 116,
+    "decryption_tot": 254,
     "cfrags_gen": 78,
-    "decryption": 254,
-    "total": 633
+    "total": 437
   },
   {
     "threshold": 17,
-    "encryption": 7,
-    "kfrags_gen": 176,
+    "encryption_tot": 7,
+    "kfrags_gen_tot": 176,
     "kfrags_reenc": 13,
     "kfrags_dist": 115,
+    "decryption_tot": 271,
     "cfrags_gen": 81,
-    "decryption": 271,
-    "total": 652
+    "total": 454
   },
   {
     "threshold": 18,
-    "encryption": 7,
-    "kfrags_gen": 179,
+    "encryption_tot": 7,
+    "kfrags_gen_tot": 179,
     "kfrags_reenc": 13,
     "kfrags_dist": 117,
+    "decryption_tot": 280,
     "cfrags_gen": 81,
-    "decryption": 280,
-    "total": 667
+    "total": 466
   },
   {
     "threshold": 19,
-    "encryption": 7,
-    "kfrags_gen": 179,
+    "encryption_tot": 7,
+    "kfrags_gen_tot": 179,
     "kfrags_reenc": 12,
     "kfrags_dist": 116,
+    "decryption_tot": 293,
     "cfrags_gen": 80,
-    "decryption": 293,
-    "total": 678
+    "total": 479
   },
   {
     "threshold": 20,
-    "encryption": 7,
-    "kfrags_gen": 178,
+    "encryption_tot": 7,
+    "kfrags_gen_tot": 178,
     "kfrags_reenc": 12,
     "kfrags_dist": 115,
+    "decryption_tot": 306,
     "cfrags_gen": 84,
-    "decryption": 306,
-    "total": 692
+    "total": 491
   },
   {
     "threshold": 21,
-    "encryption": 7,
-    "kfrags_gen": 176,
+    "encryption_tot": 7,
+    "kfrags_gen_tot": 176,
     "kfrags_reenc": 11,
     "kfrags_dist": 112,
+    "decryption_tot": 325,
     "cfrags_gen": 87,
-    "decryption": 325,
-    "total": 710
+    "total": 508
   },
   {
     "threshold": 22,
-    "encryption": 7,
-    "kfrags_gen": 178,
+    "encryption_tot": 7,
+    "kfrags_gen_tot": 178,
     "kfrags_reenc": 11,
     "kfrags_dist": 114,
+    "decryption_tot": 332,
     "cfrags_gen": 86,
-    "decryption": 332,
-    "total": 719
+    "total": 517
   },
   {
     "threshold": 23,
-    "encryption": 7,
-    "kfrags_gen": 177,
+    "encryption_tot": 7,
+    "kfrags_gen_tot": 177,
     "kfrags_reenc": 11,
     "kfrags_dist": 112,
+    "decryption_tot": 348,
     "cfrags_gen": 90,
-    "decryption": 348,
-    "total": 736
+    "total": 532
   },
   {
     "threshold": 24,
-    "encryption": 7,
-    "kfrags_gen": 181,
+    "encryption_tot": 7,
+    "kfrags_gen_tot": 181,
     "kfrags_reenc": 11,
     "kfrags_dist": 115,
+    "decryption_tot": 358,
     "cfrags_gen": 88,
-    "decryption": 358,
-    "total": 751
+    "total": 546
   },
   {
     "threshold": 25,
-    "encryption": 7,
-    "kfrags_gen": 183,
+    "encryption_tot": 7,
+    "kfrags_gen_tot": 183,
     "kfrags_reenc": 11,
     "kfrags_dist": 116,
+    "decryption_tot": 373,
     "cfrags_gen": 90,
-    "decryption": 373,
-    "total": 771
+    "total": 563
   }
 ]

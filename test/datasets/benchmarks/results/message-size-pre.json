@@ -1,0 +1,93 @@
+[
+  {
+    "size": 10,
+    "encryption": 7,
+    "keys": 167,
+    "decryption": 106,
+    "total": 280
+  },
+  {
+    "size": 50,
+    "encryption": 7,
+    "keys": 167,
+    "decryption": 104,
+    "total": 278
+  },
+  {
+    "size": 100,
+    "encryption": 7,
+    "keys": 170,
+    "decryption": 105,
+    "total": 282
+  },
+  {
+    "size": 500,
+    "encryption": 7,
+    "keys": 168,
+    "decryption": 104,
+    "total": 279
+  },
+  {
+    "size": 1000,
+    "encryption": 7,
+    "keys": 169,
+    "decryption": 103,
+    "total": 279
+  },
+  {
+    "size": 5000,
+    "encryption": 7,
+    "keys": 178,
+    "decryption": 104,
+    "total": 289
+  },
+  {
+    "size": 10000,
+    "encryption": 8,
+    "keys": 170,
+    "decryption": 104,
+    "total": 282
+  },
+  {
+    "size": 50000,
+    "encryption": 9,
+    "keys": 168,
+    "decryption": 105,
+    "total": 282
+  },
+  {
+    "size": 100000,
+    "encryption": 11,
+    "keys": 167,
+    "decryption": 111,
+    "total": 289
+  },
+  {
+    "size": 500000,
+    "encryption": 29,
+    "keys": 167,
+    "decryption": 122,
+    "total": 318
+  },
+  {
+    "size": 1000000,
+    "encryption": 53,
+    "keys": 167,
+    "decryption": 146,
+    "total": 366
+  },
+  {
+    "size": 5000000,
+    "encryption": 226,
+    "keys": 168,
+    "decryption": 300,
+    "total": 694
+  },
+  {
+    "size": 10000000,
+    "encryption": 437,
+    "keys": 171,
+    "decryption": 497,
+    "total": 1105
+  }
+]

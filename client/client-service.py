@@ -181,7 +181,7 @@ def main():
                 # FINISH
                 assert(decr_res['plain'] == plaintext)
                 show_debug(decr_res['plain'])
-                total = enc_tot + kfr_tot + dis_tot + cfr_tot + dec_tot
+                total = enc_tot + kfr_tot + dec_tot
                 tot += total
                 enc += enc_tot
                 kfr += kfr_tot
@@ -192,12 +192,12 @@ def main():
             writer.append(
                 {
                     case: int(x),
-                    "encryption": int(enc / max_rang),
-                    "kfrags_gen": int(kfr / max_rang),
+                    "encryption_tot": int(enc / max_rang),
+                    "kfrags_gen_tot": int(kfr / max_rang),
                     "kfrags_reenc": int(ree / max_rang),
                     "kfrags_dist": int(dis / max_rang),
+                    "decryption_tot": int(dec / max_rang),
                     "cfrags_gen": int(cfr / max_rang),
-                    "decryption": int(dec / max_rang),
                     "total": int(tot / max_rang)
                 }
             )
