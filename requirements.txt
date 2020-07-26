@@ -2,3 +2,4 @@ aiohttp==3.6.2
 asyncio==3.4.3
 Flask==1.1.2
 umbral==0.1.3a2
+requests==2.23.0   
