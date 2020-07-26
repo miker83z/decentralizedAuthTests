@@ -7,7 +7,7 @@ import json
 import sys
 
 x_data = np.arange(2, 26, 1)
-check_permission_error = 65
+check_permission_error = 3
 
 if len(sys.argv) > 2:
     stats_file = sys.argv[1]
