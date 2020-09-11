@@ -1,6 +1,6 @@
-# umbralPre
+# Umbral Proxy Re-Encryption test
 
-Umbral Proxy Re-Encryption network test
+This is the reference implementation to provide a testbed to evaluate the [Umbral Proxy Re-Encryption](https://github.com/nucypher/umbral-doc/blob/master/umbral-doc.pdf) algorithm in a network. 
 
 ---
 
@@ -15,6 +15,8 @@ $ virtualenv -p python3 venv
 $ source venv/bin/activate
 $ pip install -r requirements.txt
 ```
+
+---
 
 ## Running
 
