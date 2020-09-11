@@ -1,0 +1,60 @@
+[
+  { "encryption": 53, "decryption": 126, "key_generation": 973, "length": 10 },
+  { "encryption": 53, "decryption": 126, "key_generation": 969, "length": 50 },
+  { "encryption": 53, "decryption": 125, "key_generation": 972, "length": 100 },
+  { "encryption": 53, "decryption": 125, "key_generation": 972, "length": 500 },
+  {
+    "encryption": 53,
+    "decryption": 126,
+    "key_generation": 974,
+    "length": 1000
+  },
+  {
+    "encryption": 55,
+    "decryption": 129,
+    "key_generation": 972,
+    "length": 5000
+  },
+  {
+    "encryption": 60,
+    "decryption": 135,
+    "key_generation": 971,
+    "length": 10000
+  },
+  {
+    "encryption": 98,
+    "decryption": 178,
+    "key_generation": 973,
+    "length": 50000
+  },
+  {
+    "encryption": 147,
+    "decryption": 231,
+    "key_generation": 980,
+    "length": 100000
+  },
+  {
+    "encryption": 519,
+    "decryption": 642,
+    "key_generation": 1022,
+    "length": 500000
+  },
+  {
+    "encryption": 985,
+    "decryption": 1150,
+    "key_generation": 1069,
+    "length": 1000000
+  },
+  {
+    "encryption": 4753,
+    "decryption": 5278,
+    "key_generation": 1461,
+    "length": 5000000
+  },
+  {
+    "encryption": 9493,
+    "decryption": 10452,
+    "key_generation": 1963,
+    "length": 10000000
+  }
+]

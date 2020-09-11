@@ -1,0 +1,148 @@
+[
+  { "encryption": 53, "decryption": 25, "threshold": 0, "key_generation": 960 },
+  {
+    "encryption": 53,
+    "decryption": 121,
+    "threshold": 1,
+    "key_generation": 967
+  },
+  {
+    "encryption": 52,
+    "decryption": 127,
+    "threshold": 2,
+    "key_generation": 965
+  },
+  {
+    "encryption": 52,
+    "decryption": 195,
+    "threshold": 3,
+    "key_generation": 969
+  },
+  {
+    "encryption": 52,
+    "decryption": 192,
+    "threshold": 4,
+    "key_generation": 972
+  },
+  {
+    "encryption": 52,
+    "decryption": 236,
+    "threshold": 5,
+    "key_generation": 979
+  },
+  {
+    "encryption": 52,
+    "decryption": 212,
+    "threshold": 6,
+    "key_generation": 976
+  },
+  {
+    "encryption": 52,
+    "decryption": 208,
+    "threshold": 7,
+    "key_generation": 963
+  },
+  {
+    "encryption": 52,
+    "decryption": 226,
+    "threshold": 8,
+    "key_generation": 962
+  },
+  {
+    "encryption": 52,
+    "decryption": 233,
+    "threshold": 9,
+    "key_generation": 965
+  },
+  {
+    "encryption": 53,
+    "decryption": 241,
+    "threshold": 10,
+    "key_generation": 966
+  },
+  {
+    "encryption": 52,
+    "decryption": 252,
+    "threshold": 11,
+    "key_generation": 968
+  },
+  {
+    "encryption": 53,
+    "decryption": 269,
+    "threshold": 12,
+    "key_generation": 970
+  },
+  {
+    "encryption": 52,
+    "decryption": 272,
+    "threshold": 13,
+    "key_generation": 975
+  },
+  {
+    "encryption": 52,
+    "decryption": 265,
+    "threshold": 14,
+    "key_generation": 978
+  },
+  {
+    "encryption": 53,
+    "decryption": 293,
+    "threshold": 15,
+    "key_generation": 981
+  },
+  {
+    "encryption": 53,
+    "decryption": 324,
+    "threshold": 16,
+    "key_generation": 976
+  },
+  {
+    "encryption": 53,
+    "decryption": 337,
+    "threshold": 17,
+    "key_generation": 980
+  },
+  {
+    "encryption": 53,
+    "decryption": 340,
+    "threshold": 18,
+    "key_generation": 986
+  },
+  {
+    "encryption": 53,
+    "decryption": 349,
+    "threshold": 19,
+    "key_generation": 992
+  },
+  {
+    "encryption": 54,
+    "decryption": 363,
+    "threshold": 20,
+    "key_generation": 997
+  },
+  {
+    "encryption": 53,
+    "decryption": 373,
+    "threshold": 21,
+    "key_generation": 1001
+  },
+  {
+    "encryption": 53,
+    "decryption": 379,
+    "threshold": 22,
+    "key_generation": 1007
+  },
+  {
+    "encryption": 53,
+    "decryption": 363,
+    "threshold": 23,
+    "key_generation": 1011
+  },
+  {
+    "encryption": 53,
+    "decryption": 371,
+    "threshold": 24,
+    "key_generation": 1016
+  }
+]
+

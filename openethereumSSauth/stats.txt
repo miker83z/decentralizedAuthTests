@@ -1,0 +1,54 @@
+[
+{"encryption" : 56176, "decryption": 40839, "key_generation" : 817, "length": 5000000},
+{"encryption" : 4738, "decryption": 5333, "key_generation" : 821, "length": 5000000},
+{"encryption" : 9480, "decryption": 10500, "key_generation" : 1315, "length": 10000000},
+]
+#Message Size
+[
+{"encryption" : 53, "decryption": 25, "threshold" : 0, "key_generation" : 960},
+{"encryption" : 53, "decryption": 121, "threshold" : 1, "key_generation" : 967},
+{"encryption" : 52, "decryption": 127, "threshold" : 2, "key_generation" : 965},
+{"encryption" : 52, "decryption": 195, "threshold" : 3, "key_generation" : 969},
+{"encryption" : 52, "decryption": 192, "threshold" : 4, "key_generation" : 972},
+{"encryption" : 52, "decryption": 236, "threshold" : 5, "key_generation" : 979},
+{"encryption" : 52, "decryption": 212, "threshold" : 6, "key_generation" : 976},
+{"encryption" : 52, "decryption": 208, "threshold" : 7, "key_generation" : 963},
+{"encryption" : 52, "decryption": 226, "threshold" : 8, "key_generation" : 962},
+{"encryption" : 52, "decryption": 233, "threshold" : 9, "key_generation" : 965},
+{"encryption" : 53, "decryption": 241, "threshold" : 10, "key_generation" : 966},
+{"encryption" : 52, "decryption": 252, "threshold" : 11, "key_generation" : 968},
+{"encryption" : 53, "decryption": 269, "threshold" : 12, "key_generation" : 970},
+{"encryption" : 52, "decryption": 272, "threshold" : 13, "key_generation" : 975},
+{"encryption" : 52, "decryption": 265, "threshold" : 14, "key_generation" : 978},
+{"encryption" : 53, "decryption": 293, "threshold" : 15, "key_generation" : 981},
+{"encryption" : 53, "decryption": 324, "threshold" : 16, "key_generation" : 976},
+{"encryption" : 53, "decryption": 337, "threshold" : 17, "key_generation" : 980},
+{"encryption" : 53, "decryption": 340, "threshold" : 18, "key_generation" : 986},
+{"encryption" : 53, "decryption": 349, "threshold" : 19, "key_generation" : 992},
+{"encryption" : 54, "decryption": 363, "threshold" : 20, "key_generation" : 997},
+{"encryption" : 53, "decryption": 373, "threshold" : 21, "key_generation" : 1001},
+{"encryption" : 53, "decryption": 379, "threshold" : 22, "key_generation" : 1007},
+{"encryption" : 53, "decryption": 363, "threshold" : 23, "key_generation" : 1011},
+{"encryption" : 53, "decryption": 371, "threshold" : 24, "key_generation" : 1016},
+]
+#Range 0..25 with step 0
+[
+{"encryption" : 53, "decryption": 126, "key_generation" : 973, "length": 10},
+{"encryption" : 53, "decryption": 126, "key_generation" : 969, "length": 50},
+{"encryption" : 53, "decryption": 125, "key_generation" : 972, "length": 100},
+{"encryption" : 53, "decryption": 125, "key_generation" : 972, "length": 500},
+{"encryption" : 53, "decryption": 126, "key_generation" : 974, "length": 1000},
+{"encryption" : 55, "decryption": 129, "key_generation" : 972, "length": 5000},
+{"encryption" : 60, "decryption": 135, "key_generation" : 971, "length": 10000},
+{"encryption" : 98, "decryption": 178, "key_generation" : 973, "length": 50000},
+{"encryption" : 147, "decryption": 231, "key_generation" : 980, "length": 100000},
+{"encryption" : 519, "decryption": 642, "key_generation" : 1022, "length": 500000},
+{"encryption" : 985, "decryption": 1150, "key_generation" : 1069, "length": 1000000},
+{"encryption" : 4753, "decryption": 5278, "key_generation" : 1461, "length": 5000000},
+{"encryption" : 9493, "decryption": 10452, "key_generation" : 1963, "length": 10000000},
+]
+#Message Size tests
+[
+{"set" : 58, "get": 3, "no_members": 10, "used_gas": 265381},
+]
+#Permission time

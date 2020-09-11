@@ -1,0 +1,18 @@
+[
+  { "encryption": 1101, "decryption": 202, "set_access": 29, "length": 10 },
+  { "encryption": 1082, "decryption": 195, "set_access": 28, "length": 50 },
+  { "encryption": 1079, "decryption": 183, "set_access": 28, "length": 100 },
+  { "encryption": 1080, "decryption": 181, "set_access": 28, "length": 500 },
+  { "encryption": 1012, "decryption": 177, "set_access": 28, "length": 1000 },
+  { "encryption": 942, "decryption": 191, "set_access": 28, "length": 5000 },
+  { "encryption": 949, "decryption": 163, "set_access": 28, "length": 10000 },
+  { "encryption": 991, "decryption": 235, "set_access": 28, "length": 50000 },
+  { "encryption": 1046, "decryption": 289, "set_access": 28, "length": 100000 },
+  { "encryption": 1484, "decryption": 713, "set_access": 28, "length": 500000 },
+  {
+    "encryption": 2290,
+    "decryption": 1232,
+    "set_access": 29,
+    "length": 1000000
+  }
+]
