@@ -179,7 +179,7 @@ impl Blockchain {
     ) -> Result<TransactionResult, Error> {
         let document_id = H256::from_str(document_id).unwrap();
         let account = Account::Locked(address, password.into(), None);
-        /*let result = self
+        let result = self
             .contract
             .allow_access(document_id.into(), addresses.into())
             .from(account.clone())
@@ -188,7 +188,7 @@ impl Blockchain {
             .await
             .map_err(SyncFailure::new)?;
         println!("Gas price {:?}", result);
-        */
+
         let result = self
             .contract
             .allow_access(document_id.into(), addresses.into())
