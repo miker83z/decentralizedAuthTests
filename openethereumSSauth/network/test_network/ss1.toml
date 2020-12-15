@@ -52,4 +52,4 @@ server_set_contract = "none"
 interface = "all"
 port = 8011 #8011 port used to communicated with other Secret Store nodes
 path = "db.ss1/secretstore"
-acl_contract = "none"
+acl_contract = "c8AD1C0c942B4af2C51183b84dF0223897067657"
