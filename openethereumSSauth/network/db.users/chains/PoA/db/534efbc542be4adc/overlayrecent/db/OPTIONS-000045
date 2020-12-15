@@ -133,7 +133,7 @@
   inplace_update_support=false
   periodic_compaction_seconds=0
   disable_auto_compactions=false
-  report_bg_io_stats=true
+  report_bg_io_stats=false
   
 [TableOptions/BlockBasedTable "default"]
   pin_top_level_index_and_filter=true
@@ -171,7 +171,7 @@
   memtable_factory=SkipListFactory
   memtable_insert_with_hint_prefix_extractor=nullptr
   comparator=leveldb.BytewiseComparator
-  target_file_size_base=67108864
+  target_file_size_base=268435456
   max_sequential_skip_in_iterations=8
   compaction_style=kCompactionStyleLevel
   max_bytes_for_level_base=268435456
@@ -193,7 +193,7 @@
   level0_slowdown_writes_trigger=20
   compaction_filter=nullptr
   level0_file_num_compaction_trigger=2
-  max_compaction_bytes=1677721600
+  max_compaction_bytes=6710886400
   compaction_options_universal={allow_trivial_move=false;stop_style=kCompactionStopStyleTotalSize;compression_size_percent=-1;max_size_amplification_percent=200;max_merge_width=4294967295;min_merge_width=2;size_ratio=1;}
   memtable_prefix_bloom_size_ratio=0.000000
   max_write_buffer_size_to_maintain=0
@@ -224,7 +224,7 @@
   metadata_block_size=4096
   block_size_deviation=10
   partition_filters=false
-  block_size=16384
+  block_size=65536
   index_block_restart_interval=1
   no_block_cache=false
   checksum=kCRC32c
@@ -251,7 +251,7 @@
   memtable_factory=SkipListFactory
   memtable_insert_with_hint_prefix_extractor=nullptr
   comparator=leveldb.BytewiseComparator
-  target_file_size_base=67108864
+  target_file_size_base=268435456
   max_sequential_skip_in_iterations=8
   compaction_style=kCompactionStyleLevel
   max_bytes_for_level_base=16777216
@@ -273,7 +273,7 @@
   level0_slowdown_writes_trigger=20
   compaction_filter=nullptr
   level0_file_num_compaction_trigger=2
-  max_compaction_bytes=1677721600
+  max_compaction_bytes=6710886400
   compaction_options_universal={allow_trivial_move=false;stop_style=kCompactionStopStyleTotalSize;compression_size_percent=-1;max_size_amplification_percent=200;max_merge_width=4294967295;min_merge_width=2;size_ratio=1;}
   memtable_prefix_bloom_size_ratio=0.000000
   max_write_buffer_size_to_maintain=0
@@ -304,7 +304,7 @@
   metadata_block_size=4096
   block_size_deviation=10
   partition_filters=false
-  block_size=16384
+  block_size=65536
   index_block_restart_interval=1
   no_block_cache=false
   checksum=kCRC32c
@@ -331,7 +331,7 @@
   memtable_factory=SkipListFactory
   memtable_insert_with_hint_prefix_extractor=nullptr
   comparator=leveldb.BytewiseComparator
-  target_file_size_base=67108864
+  target_file_size_base=268435456
   max_sequential_skip_in_iterations=8
   compaction_style=kCompactionStyleLevel
   max_bytes_for_level_base=16777216
@@ -353,7 +353,7 @@
   level0_slowdown_writes_trigger=20
   compaction_filter=nullptr
   level0_file_num_compaction_trigger=2
-  max_compaction_bytes=1677721600
+  max_compaction_bytes=6710886400
   compaction_options_universal={allow_trivial_move=false;stop_style=kCompactionStopStyleTotalSize;compression_size_percent=-1;max_size_amplification_percent=200;max_merge_width=4294967295;min_merge_width=2;size_ratio=1;}
   memtable_prefix_bloom_size_ratio=0.000000
   max_write_buffer_size_to_maintain=0
@@ -384,7 +384,7 @@
   metadata_block_size=4096
   block_size_deviation=10
   partition_filters=false
-  block_size=16384
+  block_size=65536
   index_block_restart_interval=1
   no_block_cache=false
   checksum=kCRC32c
@@ -411,7 +411,7 @@
   memtable_factory=SkipListFactory
   memtable_insert_with_hint_prefix_extractor=nullptr
   comparator=leveldb.BytewiseComparator
-  target_file_size_base=67108864
+  target_file_size_base=268435456
   max_sequential_skip_in_iterations=8
   compaction_style=kCompactionStyleLevel
   max_bytes_for_level_base=16777216
@@ -433,7 +433,7 @@
   level0_slowdown_writes_trigger=20
   compaction_filter=nullptr
   level0_file_num_compaction_trigger=2
-  max_compaction_bytes=1677721600
+  max_compaction_bytes=6710886400
   compaction_options_universal={allow_trivial_move=false;stop_style=kCompactionStopStyleTotalSize;compression_size_percent=-1;max_size_amplification_percent=200;max_merge_width=4294967295;min_merge_width=2;size_ratio=1;}
   memtable_prefix_bloom_size_ratio=0.000000
   max_write_buffer_size_to_maintain=0
@@ -464,7 +464,7 @@
   metadata_block_size=4096
   block_size_deviation=10
   partition_filters=false
-  block_size=16384
+  block_size=65536
   index_block_restart_interval=1
   no_block_cache=false
   checksum=kCRC32c
@@ -491,7 +491,7 @@
   memtable_factory=SkipListFactory
   memtable_insert_with_hint_prefix_extractor=nullptr
   comparator=leveldb.BytewiseComparator
-  target_file_size_base=67108864
+  target_file_size_base=268435456
   max_sequential_skip_in_iterations=8
   compaction_style=kCompactionStyleLevel
   max_bytes_for_level_base=16777216
@@ -513,7 +513,7 @@
   level0_slowdown_writes_trigger=20
   compaction_filter=nullptr
   level0_file_num_compaction_trigger=2
-  max_compaction_bytes=1677721600
+  max_compaction_bytes=6710886400
   compaction_options_universal={allow_trivial_move=false;stop_style=kCompactionStopStyleTotalSize;compression_size_percent=-1;max_size_amplification_percent=200;max_merge_width=4294967295;min_merge_width=2;size_ratio=1;}
   memtable_prefix_bloom_size_ratio=0.000000
   max_write_buffer_size_to_maintain=0
@@ -544,7 +544,7 @@
   metadata_block_size=4096
   block_size_deviation=10
   partition_filters=false
-  block_size=16384
+  block_size=65536
   index_block_restart_interval=1
   no_block_cache=false
   checksum=kCRC32c
@@ -571,7 +571,7 @@
   memtable_factory=SkipListFactory
   memtable_insert_with_hint_prefix_extractor=nullptr
   comparator=leveldb.BytewiseComparator
-  target_file_size_base=67108864
+  target_file_size_base=268435456
   max_sequential_skip_in_iterations=8
   compaction_style=kCompactionStyleLevel
   max_bytes_for_level_base=16777216
@@ -593,7 +593,7 @@
   level0_slowdown_writes_trigger=20
   compaction_filter=nullptr
   level0_file_num_compaction_trigger=2
-  max_compaction_bytes=1677721600
+  max_compaction_bytes=6710886400
   compaction_options_universal={allow_trivial_move=false;stop_style=kCompactionStopStyleTotalSize;compression_size_percent=-1;max_size_amplification_percent=200;max_merge_width=4294967295;min_merge_width=2;size_ratio=1;}
   memtable_prefix_bloom_size_ratio=0.000000
   max_write_buffer_size_to_maintain=0
@@ -624,7 +624,7 @@
   metadata_block_size=4096
   block_size_deviation=10
   partition_filters=false
-  block_size=16384
+  block_size=65536
   index_block_restart_interval=1
   no_block_cache=false
   checksum=kCRC32c
@@ -651,7 +651,7 @@
   memtable_factory=SkipListFactory
   memtable_insert_with_hint_prefix_extractor=nullptr
   comparator=leveldb.BytewiseComparator
-  target_file_size_base=67108864
+  target_file_size_base=268435456
   max_sequential_skip_in_iterations=8
   compaction_style=kCompactionStyleLevel
   max_bytes_for_level_base=16777216
@@ -673,7 +673,7 @@
   level0_slowdown_writes_trigger=20
   compaction_filter=nullptr
   level0_file_num_compaction_trigger=2
-  max_compaction_bytes=1677721600
+  max_compaction_bytes=6710886400
   compaction_options_universal={allow_trivial_move=false;stop_style=kCompactionStopStyleTotalSize;compression_size_percent=-1;max_size_amplification_percent=200;max_merge_width=4294967295;min_merge_width=2;size_ratio=1;}
   memtable_prefix_bloom_size_ratio=0.000000
   max_write_buffer_size_to_maintain=0
@@ -704,7 +704,7 @@
   metadata_block_size=4096
   block_size_deviation=10
   partition_filters=false
-  block_size=16384
+  block_size=65536
   index_block_restart_interval=1
   no_block_cache=false
   checksum=kCRC32c
@@ -731,7 +731,7 @@
   memtable_factory=SkipListFactory
   memtable_insert_with_hint_prefix_extractor=nullptr
   comparator=leveldb.BytewiseComparator
-  target_file_size_base=67108864
+  target_file_size_base=268435456
   max_sequential_skip_in_iterations=8
   compaction_style=kCompactionStyleLevel
   max_bytes_for_level_base=16777216
@@ -753,7 +753,7 @@
   level0_slowdown_writes_trigger=20
   compaction_filter=nullptr
   level0_file_num_compaction_trigger=2
-  max_compaction_bytes=1677721600
+  max_compaction_bytes=6710886400
   compaction_options_universal={allow_trivial_move=false;stop_style=kCompactionStopStyleTotalSize;compression_size_percent=-1;max_size_amplification_percent=200;max_merge_width=4294967295;min_merge_width=2;size_ratio=1;}
   memtable_prefix_bloom_size_ratio=0.000000
   max_write_buffer_size_to_maintain=0
@@ -784,7 +784,7 @@
   metadata_block_size=4096
   block_size_deviation=10
   partition_filters=false
-  block_size=16384
+  block_size=65536
   index_block_restart_interval=1
   no_block_cache=false
   checksum=kCRC32c
@@ -811,7 +811,7 @@
   memtable_factory=SkipListFactory
   memtable_insert_with_hint_prefix_extractor=nullptr
   comparator=leveldb.BytewiseComparator
-  target_file_size_base=67108864
+  target_file_size_base=268435456
   max_sequential_skip_in_iterations=8
   compaction_style=kCompactionStyleLevel
   max_bytes_for_level_base=16777216
@@ -833,7 +833,7 @@
   level0_slowdown_writes_trigger=20
   compaction_filter=nullptr
   level0_file_num_compaction_trigger=2
-  max_compaction_bytes=1677721600
+  max_compaction_bytes=6710886400
   compaction_options_universal={allow_trivial_move=false;stop_style=kCompactionStopStyleTotalSize;compression_size_percent=-1;max_size_amplification_percent=200;max_merge_width=4294967295;min_merge_width=2;size_ratio=1;}
   memtable_prefix_bloom_size_ratio=0.000000
   max_write_buffer_size_to_maintain=0
@@ -864,7 +864,7 @@
   metadata_block_size=4096
   block_size_deviation=10
   partition_filters=false
-  block_size=16384
+  block_size=65536
   index_block_restart_interval=1
   no_block_cache=false
   checksum=kCRC32c

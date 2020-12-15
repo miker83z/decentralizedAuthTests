@@ -474,7 +474,7 @@ mod tests {
 
     #[test]
     fn time_check_permissions() {
-        let address = "18f2801b4c9bab5c9082448cf9b6f73b86321726";
+        let address = "310285E10295850256aa3f7E39e79FD46244cB1D";
         let password = "alicepwd";
         let mut store = CryptoSecretStore::new(address, password);
         let mut file = OpenOptions::new()
