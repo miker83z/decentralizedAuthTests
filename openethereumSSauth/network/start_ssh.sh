@@ -104,10 +104,10 @@ echo "Starting $NUMBER_OF_NODES nodes"
 for (( i = 2; i <= $NUMBER_OF_NODES; i++ )) ; do
   if [ "$1" = "-c" ] ; then
     contract=$2
-    ssh -f -o StrictHostKeyChecking=no -l $USERNAME ${HOSTS[$i]} "cd test_network;  sed -i '\$d' ss${i}.toml; echo 'acl_contract = \"$contract\"' >> ss${i}.toml; ~/bin/parity --config ss${i}.toml --force-sealing"
+    ssh -f -o StrictHostKeyChecking=no -l $USERNAME ${HOSTS[$i]} "cd test_network;  sed -i '\$d' ss${i}.toml; echo 'acl_contract = \"$contract\"' >> ss${i}.toml; ~/bin/parity --config ss${i}.toml --force-sealing --no-warp"
   else
     echo "${HOSTS[$i]}"
-    ssh -f -o StrictHostKeyChecking=no -l $USERNAME ${HOSTS[$i]} "cd test_network; ~/bin/parity --config ss${i}.toml --force-sealing"
+    ssh -f -o StrictHostKeyChecking=no -l $USERNAME ${HOSTS[$i]} "cd test_network; ~/bin/parity --config ss${i}.toml --force-sealing --no-warp"
   fi
 done
 
@@ -117,7 +117,7 @@ if [ "$1" = "-c" ] ; then
   echo "acl_contract = \"$contract\"" >> ss1.toml
 fi
 
-parity --config "ss1.toml" --force-sealing
+parity --config "ss1.toml" --force-sealing --no-warp
 
 for (( i = 2; i <= $NUMBER_OF_NODES; i++ )) ; do
   ssh -f -o StrictHostKeyChecking=no -l $USERNAME ${HOSTS[$i]} "killall parity"
