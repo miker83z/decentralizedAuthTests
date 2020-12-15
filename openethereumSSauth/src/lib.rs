@@ -509,7 +509,10 @@ mod tests {
         for addr in &test_addresses {
             thread::sleep(time::Duration::from_millis(300));
             let now = time::Instant::now();
-            let result = store.check_permissions(addr.clone(), &test_ids[i]).unwrap();
+            let result = match store.check_permissions(addr.clone(), &test_ids[i]) {
+                Ok(re) => re,
+                Err(error) => panic!("Check error: {:?}", error),
+            };
             duration_decr += now.elapsed();
             assert_eq!(result, true);
             i += 1;
