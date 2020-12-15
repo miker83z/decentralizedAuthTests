@@ -3,14 +3,14 @@
     "engine": {
         "authorityRound": {
             "params": {
-                "stepDuration": "5",
+                "stepDuration": "1",
                 "validators" : {
                     "list": [
-							"0xd6c5b5c7624012894f460afccf473f3911b2dec1",
-				"0x0fb7e0a9a9f0b55720ec0ac9b32fef495ee898a9",
-				"0x3a862a18ec22f5aa175a728498eb7b5715c21283",
-				"0xe03f38c96c8457d721b03c4b9257e5fcd2868886",
-				"0xc497ae76ce0f523d6b51dfabe65983ff0d4b2d6e"
+							"0x71b3775f87fb6879aa43733d4b3c88d284b32aa9",
+				"0x4c1de715c7c910af34440c31f760f994d1667712",
+				"0x467ca2585f9d50f3f9afa3e4e562111be77e5ea8",
+				"0x4bf14f87067f9a226a4063346b783193289d1c9d",
+				"0x2fca45e71e65bcb890f2054f0ff4247945eaab6c"
                     ]
                 }
             }

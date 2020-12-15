@@ -193,7 +193,7 @@ impl Blockchain {
             .contract
             .allow_access(document_id.into(), addresses.into())
             .from(account)
-            .gas(7000000.into())
+            .gas(6000000.into())
             .send()
             .await
             .map_err(SyncFailure::new)?;
