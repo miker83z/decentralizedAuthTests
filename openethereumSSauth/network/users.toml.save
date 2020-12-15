@@ -1,0 +1,32 @@
+# File users.toml
+# This configuration file can be used for either Alice, Bob or Charlie
+
+[parity]
+chain = "dev"
+base_path = "db.users"
+
+[rpc]
+port = 8545 #default http port for RPC
+apis = ["web3","eth","pubsub","net","parity","parity_pubsub","traces","rpc","shh","shh_pubsub","secretstore", "personal"] # to access dedicated methods
+cors = ["all"]
+interface = "all"
+max_payload = 50
+
+[account] # unlock Alice's account to deploy the contract
+unlock = ["0x18f2801b4c9bab5c9082448cf9b6f73b86321726"]
+password = ["alice.pwd"]
+
+[secretstore]
+disable = true # users do not run a secret store node
+
+[ui]
+disable = true
+
+[websockets]
+disable = true
+
+[network]
+port = 30300
+bootnodes = 
+    "enode://18d435967183258f6aef6319c77c9806f35614ce8a4713bed97223c37dd7cf24cb018103328d7d73d8b07c118607c87209dee20bd6924738e674a69052a4bf59@34.91.1.238:30301",
+]

@@ -28,7 +28,7 @@ if [ "$1" = "-s" ] ; then
     addr=`parity --config "ss${i}.toml" account new`
 
     echo "Create account with address \"${addr}\""
-    sed -i -e "s/#TEMPLATE_ACCOUNT/self_secret = \"${addr/0x/}\"/g" "ss${i}.toml"
+    sed -i -e "s/#TEMPLATE_ACCOUNT/self_secret = \"${addr/0x/}\"/g" -e "s/TEMPLATE_ENGINESIG/${addr}/g" "ss${i}.toml"
 
     exec 2>&1
 
@@ -55,6 +55,8 @@ if [ "$1" = "-s" ] ; then
       bootnodes[$i]="${public_node/@*/@${IP}}:${PORT}"
       #bootnodes[$i]="${public_node}"
 
+      addrs[$i]="${addr}"
+
       echo "Created node ss${i}"
       http_disabled="true"
     done
@@ -70,6 +72,7 @@ if [ "$1" = "-s" ] ; then
     done
 
     echo "Update bootnodes and SecretStore nodes."
+    string_addrs=""
     for (( i = 1; i <= $NUMBER_OF_NODES; i++ ))
     do
       string_bootnodes=""
@@ -83,22 +86,28 @@ if [ "$1" = "-s" ] ; then
       done
       sed -i "/\[network\]/a bootnodes = \[\n${string_bootnodes}\]" "ss${i}.toml"
       sed -i "/\[secretstore\]/a nodes = \[\n${string_ssnodes}\]" "ss${i}.toml"
+      sed -i -e "s/..\/spec-template.json/spec.json/g" "ss${i}.toml"
+      string_addrs+="				\"${addrs[$i]}\""
+      if [ $i -ne $NUMBER_OF_NODES ] ; then
+        string_addrs+=",\n"
+      fi
     done
+    sed -e "s/\"0x5044796d3060cd7351e6986872ce2676ac06df77\"/${string_addrs}/g" "../spec-template.json"  > "spec.json"
     cd ..
 
-    rsync -av --delete test_network mirko.zichichi@porgy.cs.unibo.it:~/
+    rsync -a --delete test_network mirko.zichichi@porgy.cs.unibo.it:~/
 fi
 
-rsync -av --delete test_network mirko.zichichi@porgy.cs.unibo.it:~/
+rsync -a --delete test_network mirko.zichichi@porgy.cs.unibo.it:~/
 NUMBER_OF_NODES=`cat test_network/size`
 echo "Starting $NUMBER_OF_NODES nodes"
 for (( i = 2; i <= $NUMBER_OF_NODES; i++ )) ; do
   if [ "$1" = "-c" ] ; then
     contract=$2
-    ssh -f -o StrictHostKeyChecking=no -l $USERNAME ${HOSTS[$i]} "cd test_network;  sed -i '\$d' ss${i}.toml; echo 'acl_contract = \"$contract\"' >> ss${i}.toml; ~/bin/parity --config ss${i}.toml --no-warp"
+    ssh -f -o StrictHostKeyChecking=no -l $USERNAME ${HOSTS[$i]} "cd test_network;  sed -i '\$d' ss${i}.toml; echo 'acl_contract = \"$contract\"' >> ss${i}.toml; ~/bin/parity --config ss${i}.toml --force-sealing"
   else
     echo "${HOSTS[$i]}"
-    ssh -f -o StrictHostKeyChecking=no -l $USERNAME ${HOSTS[$i]} "cd test_network; ~/bin/parity --config ss${i}.toml"
+    ssh -f -o StrictHostKeyChecking=no -l $USERNAME ${HOSTS[$i]} "cd test_network; ~/bin/parity --config ss${i}.toml --force-sealing"
   fi
 done
 
@@ -108,7 +117,7 @@ if [ "$1" = "-c" ] ; then
   echo "acl_contract = \"$contract\"" >> ss1.toml
 fi
 
-parity --config "ss1.toml" --no-warp
+parity --config "ss1.toml" --force-sealing
 
 for (( i = 2; i <= $NUMBER_OF_NODES; i++ )) ; do
   ssh -f -o StrictHostKeyChecking=no -l $USERNAME ${HOSTS[$i]} "killall parity"

@@ -1,0 +1,38 @@
+# File users.toml
+# This configuration file can be used for either Alice, Bob or Charlie
+
+[parity]
+chain = "dev"
+base_path = "db.users"
+
+[rpc]
+port = 8545 #default http port for RPC
+apis = ["web3","eth","pubsub","net","parity","parity_pubsub","traces","rpc","shh","shh_pubsub","secretstore", "personal"] # to access dedicated methods
+cors = ["all"]
+interface = "all"
+max_payload = 50
+
+[account] # unlock Alice's account to deploy the contract
+unlock = ["0x611c5161e22e45db43237c94287c03d251424a2f
+"]
+password = ["alice.pwd"]
+
+[secretstore]
+disable = true # users do not run a secret store node
+
+[ui]
+disable = true
+
+[websockets]
+disable = true
+
+[network]
+port = 30300
+bootnodes = [
+  "enode://4fcb79d01e6231e9b8f06e9a44b8ffa2420a7d410e5a253cd21220062fea3853f561865f290107a4148e66a6f507a46d654090b35911a1f98ce0b4e4ef0619a6@34.91.1.238:30301",
+  "enode://1b8c9db07c63c6903adab15cd0979045ad08fd80746b6db2d6af31395ece49eb6ba967950731b386d2ad1af88aa1249701b0de1cae00a47e702263390ecaaa88@130.136.4.229:30301",
+  "enode://e636d46715705c6a17cb820cb48281d38c18ab960cb019d3e9ffe7aa8c763ef126b3131b020e7f10648474aff6bef072f16ebda634bc37a052d97efb30783bc0@130.136.4.103:30301",
+  "enode://dfa1c077f471104cbb40006323e5d8f98ba2da049dd4fd1d292004d7d9bc6e75bcb835ced9a245427e68f641467b68de7ba4a5dda9c68e6d91fc681000b2fe83@130.136.4.104:30301",
+  "enode://f4cfbc737c2fee40894d31f45c036fc3476196aaaeb2f9ef0791b9321f01904a84d724837c7137e2776b03b703964cba1e7b42752bdfeb8177b39b4d0dfdd886@130.136.4.92:30301",
+]
+
