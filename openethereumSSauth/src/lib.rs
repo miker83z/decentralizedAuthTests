@@ -406,7 +406,7 @@ mod tests {
 
     #[test]
     fn time_access_controll() {
-        let address = "c8AD1C0c942B4af2C51183b84dF0223897067657";
+        let address = "310285E10295850256aa3f7E39e79FD46244cB1D";
         let password = "alicepwd";
         let mut store = CryptoSecretStore::new(address, password);
         let mut file = OpenOptions::new()
@@ -420,6 +420,7 @@ mod tests {
         let limit = 100;
         let step: u32 = 10;
         for size in (step..limit).step_by(step.try_into().unwrap()) {
+            println!("Step: {} / Limit{}", step, limit);
             let test_addresses: Vec<H160> = (0..size).map(|_| H160::random()).collect();
             let test_ids: Vec<String> = (0..5)
                 .map(|_| {
@@ -430,6 +431,7 @@ mod tests {
                 })
                 .collect();
 
+            println!("Allow");
             let now = time::Instant::now();
             let mut used_gas: U256 = 0.into();
             for i in 0..5 {
@@ -440,6 +442,7 @@ mod tests {
             let durtation_set_access = now.elapsed() / 5;
             let used_gas = used_gas / 5;
 
+            println!("Check");
             let now = time::Instant::now();
             for i in 0..5 {
                 for addr in &test_addresses {
