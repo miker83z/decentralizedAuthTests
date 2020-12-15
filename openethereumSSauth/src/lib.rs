@@ -496,8 +496,9 @@ mod tests {
 
         let mut used_gas: U256 = 0.into();
         for i in 0..1 {
-            println!("Document: {:?}, Address: {:?}",
-             &test_ids[i], &test_addresses
+            println!(
+                "Document: {:?}, Address: {:?}",
+                &test_ids[i], &test_addresses
             );
             let result = store.allow_access(&test_ids[i], &test_addresses).unwrap();
             assert_eq!(result.is_receipt(), true);

@@ -206,6 +206,7 @@ impl Blockchain {
         document_id: &str,
     ) -> Result<bool, Error> {
         let document_id = H256::from_str(document_id).unwrap();
+        println!("Document: {:?}, Address: {:?}", document_id, address);
         let result = self
             .contract
             .check_permissions(address, document_id.into())
