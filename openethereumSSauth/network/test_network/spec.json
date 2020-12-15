@@ -6,11 +6,11 @@
                 "stepDuration": "1",
                 "validators" : {
                     "list": [
-							"0x71b3775f87fb6879aa43733d4b3c88d284b32aa9",
-				"0x4c1de715c7c910af34440c31f760f994d1667712",
-				"0x467ca2585f9d50f3f9afa3e4e562111be77e5ea8",
-				"0x4bf14f87067f9a226a4063346b783193289d1c9d",
-				"0x2fca45e71e65bcb890f2054f0ff4247945eaab6c"
+							"0x4db50afd38f38da9b842d7dcc97ef8edf2899e10",
+				"0x52d90e83039d1592738f37d41dd168f7685c8d27",
+				"0x987794db0a1e0060bb453a2dfa587b66eeaf6430",
+				"0x31fa70c020dd4ea272667a78d398bb6ef502ca72",
+				"0xad3763cf5078d614b3330175d13c96400ab29422"
                     ]
                 }
             }
