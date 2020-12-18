@@ -10,7 +10,7 @@ x_data_int = np.array([10, 50, 100, 500, 1000, 5000, 10000, 50000, 100000, 50000
                        1000000, 5000000, 10000000])
 x_data = np.array(['10\nB', '50\nB', '100\nB', '500\nB', '1\nKB', '5\nKB', '10\nKB', '50\nKB', '100\nKB', '500\nKB',
                    '1\nMB', '5\nMB', '10\nMB'])
-check_permission_error = 3
+check_permission_error = 5
 
 if len(sys.argv) > 2:
     stats_file = sys.argv[1]
@@ -33,12 +33,6 @@ for item in data:
 enc = np.array(enc)
 dec = np.array(dec)
 tot = np.array(tot)
-a, b = np.polyfit(x_data_int, enc, deg=1)
-enc_est = a * x_data_int + b
-a, b = np.polyfit(x_data_int, dec, deg=1)
-dec_est = a * x_data_int + b
-a, b = np.polyfit(x_data_int, tot, deg=1)
-tot_est = a * x_data_int + b
 
 with open(stats_file2) as json_file:
     data2 = json.load(json_file)
@@ -55,52 +49,22 @@ for item in data2:
 enc2 = np.array(enc2)
 dec2 = np.array(dec2)
 tot2 = np.array(tot2)
-a, b = np.polyfit(x_data_int, enc2, deg=1)
-enc_est2 = a * x_data_int + b
-a, b = np.polyfit(x_data_int, dec2, deg=1)
-dec_est2 = a * x_data_int + b
-a, b = np.polyfit(x_data_int, tot2, deg=1)
-tot_est2 = a * x_data_int + b
 
 
 # plot the data
-# fig = plt.figure()
-# ax = fig.add_subplot(1, 1, 1)
-# plt.plot(x_data, enc, color='tab:green', label='encryption')
-# plt.plot(x_data, dec, color='tab:orange', label='decryption')
-# plt.plot(x_data, tot, color='tab:blue', label='total')
+plt.plot(x_data_int, tot/x_data_int, color='brown')
 
-#plt.plot(x_data_int, enc_est2, '--', color='tab:brown', alpha=0.5)
-#plt.plot(x_data_int, dec_est2, '--', color='tab:brown', alpha=0.5)
-plt.plot(x_data_int, tot_est2, '--', color='tab:brown', alpha=0.5)
-# plt.plot(x_data_int, enc2, 'v', color='tab:orange', label = 'encryption', markersize = 4)
-# plt.plot(x_data_int, dec2, '*', color='tab:orange', label='decryption')
-plt.plot(x_data_int, tot2, 's', color='tab:orange', label='total')
-
-#plt.plot(x_data_int, enc_est, '--', color='tab:brown', alpha=0.5)
-#plt.plot(x_data_int, dec_est, '--', color='tab:brown', alpha=0.5)
-plt.plot(x_data_int, tot_est, '--', color='tab:brown', alpha=0.5)
-# plt.plot(x_data_int, enc, 'v', color='tab:blue', label = 'encryption', markersize = 4)
-# plt.plot(x_data_int, dec, '*', color='tab:blue', label='decryption')
-plt.plot(x_data_int, tot, 's', color='tab:blue', label='total')
+plt.plot(x_data_int, tot2/x_data_int, color='royalblue')
 
 plt.xscale('log')
-# plt.yticks(np.arange(0, 1200, 100))
+plt.yscale('log')
 plt.xticks(x_data_int, x_data)
 
-plt.ylabel('latency (ms)')
-plt.xlabel('message size (log scale)')
+plt.ylabel('relative latency ms/B (log)')
+plt.xlabel('message size (log)')
 
-'''
-triangle = mlines.Line2D([], [], color='w', marker='v', linestyle='None', markeredgecolor='black',
-                         markersize=5, label='encr + keys distr')
-star = mlines.Line2D([], [], color='w', marker='*', linestyle='None', markeredgecolor='black',
-                     markersize=5, label='decryption')
-square = mlines.Line2D([], [], color='w', marker='s', linestyle='None', markeredgecolor='black',
-                       markersize=5, label='total')
-'''
-patch1 = mpatches.Patch(color='tab:blue', label='SS')
-patch2 = mpatches.Patch(color='tab:orange', label='PRE')
+patch1 = mpatches.Patch(color='brown', label='SS')
+patch2 = mpatches.Patch(color='royalblue', label='PRE')
 
 plt.legend(handles=[patch1, patch2])
 
