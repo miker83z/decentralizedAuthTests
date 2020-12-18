@@ -193,9 +193,9 @@ def messages():
     tot2 = np.array(tot2)
 
     # plot the data
-    axes[2].plot(x_data_int, tot/x_data_int, color='brown')
+    axes[2].plot(x_data_int, tot/x_data_int, color='brown', linewidth=2)
 
-    axes[2].plot(x_data_int, tot2/x_data_int, color='royalblue')
+    axes[2].plot(x_data_int, tot2/x_data_int, color='royalblue', linewidth=2)
 
     axes[2].set_xscale('log')
     axes[2].set_yscale('log')
