@@ -1,0 +1,182 @@
+[
+  {
+    "num_members": 10,
+    "gas": 265394,
+    "get": 61
+  },
+  {
+    "num_members": 20,
+    "gas": 485128,
+    "get": 52
+  },
+  {
+    "num_members": 30,
+    "gas": 704644,
+    "get": 62
+  },
+  {
+    "num_members": 40,
+    "gas": 924148,
+    "get": 66
+  },
+  {
+    "num_members": 50,
+    "gas": 1143946,
+    "get": 79
+  },
+  {
+    "num_members": 60,
+    "gas": 1363488,
+    "get": 87
+  },
+  {
+    "num_members": 70,
+    "gas": 1583158,
+    "get": 83
+  },
+  {
+    "num_members": 80,
+    "gas": 1802828,
+    "get": 95
+  },
+  {
+    "num_members": 90,
+    "gas": 2022229,
+    "get": 97
+  },
+  {
+    "num_members": 100,
+    "gas": 2241784,
+    "get": 120
+  },
+  {
+    "num_members": 110,
+    "gas": 2461761,
+    "get": 118
+  },
+  {
+    "num_members": 120,
+    "gas": 2681559,
+    "get": 119
+  },
+  {
+    "num_members": 130,
+    "gas": 2901139,
+    "get": 123
+  },
+  {
+    "num_members": 140,
+    "gas": 3120336,
+    "get": 126
+  },
+  {
+    "num_members": 150,
+    "gas": 3340070,
+    "get": 138
+  },
+  {
+    "num_members": 160,
+    "gas": 3559919,
+    "get": 139
+  },
+  {
+    "num_members": 170,
+    "gas": 3779538,
+    "get": 144
+  },
+  {
+    "num_members": 180,
+    "gas": 3998926,
+    "get": 149
+  },
+  {
+    "num_members": 190,
+    "gas": 4217918,
+    "get": 158
+  },
+  {
+    "num_members": 200,
+    "gas": 4437972,
+    "get": 164
+  },
+  {
+    "num_members": 210,
+    "gas": 4657962,
+    "get": 184
+  },
+  {
+    "num_members": 220,
+    "gas": 4877312,
+    "get": 191
+  },
+  {
+    "num_members": 230,
+    "gas": 5097430,
+    "get": 200
+  },
+  {
+    "num_members": 240,
+    "gas": 5317100,
+    "get": 203
+  },
+  {
+    "num_members": 250,
+    "gas": 5536258,
+    "get": 210
+  },
+  {
+    "num_members": 260,
+    "gas": 5755787,
+    "get": 215
+  },
+  {
+    "num_members": 270,
+    "gas": 5975918,
+    "get": 215
+  },
+  {
+    "num_members": 280,
+    "gas": 6194820,
+    "get": 227
+  },
+  {
+    "num_members": 290,
+    "gas": 6414989,
+    "get": 223
+  },
+  {
+    "num_members": 300,
+    "gas": 6634147,
+    "get": 241
+  },
+  {
+    "num_members": 310,
+    "gas": 6854214,
+    "get": 238
+  },
+  {
+    "num_members": 320,
+    "gas": 7073628,
+    "get": 240
+  },
+  {
+    "num_members": 330,
+    "gas": 7293618,
+    "get": 247
+  },
+  {
+    "num_members": 340,
+    "gas": 7512635,
+    "get": 254
+  },
+  {
+    "num_members": 350,
+    "gas": 7732753,
+    "get": 277
+  },
+  {
+    "num_members": 360,
+    "gas": 7951860,
+    "get": 307
+  }
+]
