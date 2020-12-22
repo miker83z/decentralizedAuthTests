@@ -6,11 +6,6 @@ import numpy as np
 import json
 import sys
 
-widths = [2.5, 1, 1.5]
-fig, axes = plt.subplots(
-    nrows=1, ncols=3, constrained_layout=True, gridspec_kw=dict(width_ratios=widths))
-fig.set_size_inches(15, 5)
-
 
 def threshold():
     x_data = np.arange(1, 26, 1)
@@ -193,21 +188,49 @@ def messages():
     tot2 = np.array(tot2)
 
     # plot the data
-    axes[2].plot(x_data_int, tot/x_data_int, color='brown', linewidth=2)
+    axes2.plot(x_data_int, enc/x_data_int, color='brown',
+               linestyle="solid", linewidth=2)
 
-    axes[2].plot(x_data_int, tot2/x_data_int, color='royalblue', linewidth=2)
+    axes2.plot(x_data_int, enc2/x_data_int, color='royalblue',
+               linestyle="solid", linewidth=2)
 
-    axes[2].set_xscale('log')
-    axes[2].set_yscale('log')
-    axes[2].set_xticks(x_data_int)
-    axes[2].set_xticklabels(x_data)
+    axes2.plot(x_data_int, dec/x_data_int, color='brown',
+               linestyle="dotted", linewidth=4)
 
-    axes[2].set_ylabel('log scale relative latency (ms/B)')
-    axes[2].set_xlabel('log scale message size (B)')
+    axes2.plot(x_data_int, dec2/x_data_int, color='royalblue',
+               linestyle="dotted", linewidth=4)
 
+    axes2.set_xscale('log')
+    axes2.set_yscale('log')
+    axes2.set_xticks(x_data_int)
+    axes2.set_xticklabels(x_data)
+
+    axes2.set_ylabel('log scale relative latency (ms/B)')
+    axes2.set_xlabel('log scale message size (B)')
+
+    patch01 = mpatches.Patch(color='brown', label='SS (left)')
+    patch02 = mpatches.Patch(color='royalblue', label='PRE (right)')
+    soli = mlines.Line2D([], [], color='black',
+                         linestyle='dotted', label='decryption')
+    dott = mlines.Line2D([], [], color='black',
+                         linestyle='solid', label='enc + keys distr')
+
+    axes2.legend(handles=[patch01, patch02, dott, soli])
+
+
+widths = [2.5, 1]
+fig, axes = plt.subplots(
+    nrows=1, ncols=2, constrained_layout=True, gridspec_kw=dict(width_ratios=widths))
+fig.set_size_inches(10.5, 5)
 
 threshold()
 nodes()
-messages()
 # display the plot
 plt.savefig('../complete.png', bbox_inches='tight', dpi=300)
+
+plt.figure(2)
+fig2, axes2 = plt.subplots(
+    nrows=1, ncols=1, constrained_layout=True)
+fig2.set_size_inches(4.5, 5)
+messages()
+plt.savefig('../complete2.png', bbox_inches='tight', dpi=300)
