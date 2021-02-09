@@ -133,8 +133,8 @@ def nodes():
 
     axes[1].set_ylim(0, 1450)
 
-    patch01 = mpatches.Patch(color='brown', label='SS (left)')
-    patch02 = mpatches.Patch(color='royalblue', label='PRE (right)')
+    patch01 = mpatches.Patch(color='brown', label='SS')
+    patch02 = mpatches.Patch(color='royalblue', label='TPRE')
     patch1 = mpatches.Patch(color='dimgray', label='decryption (dark)')
     patch2 = mpatches.Patch(color='silver', label='keys distr (medium)')
     patch3 = mpatches.Patch(color='whitesmoke', label='encryption (light)')
@@ -188,28 +188,28 @@ def messages():
     tot2 = np.array(tot2)
 
     # plot the data
-    axes2.plot(x_data_int, enc/x_data_int, color='brown',
+    axes2.plot(x_data_int, enc, color='brown',
                linestyle="solid", linewidth=2)
 
-    axes2.plot(x_data_int, enc2/x_data_int, color='royalblue',
+    axes2.plot(x_data_int, enc2, color='royalblue',
                linestyle="solid", linewidth=2)
 
-    axes2.plot(x_data_int, dec/x_data_int, color='brown',
+    axes2.plot(x_data_int, dec, color='brown',
                linestyle="dotted", linewidth=4)
 
-    axes2.plot(x_data_int, dec2/x_data_int, color='royalblue',
+    axes2.plot(x_data_int, dec2, color='royalblue',
                linestyle="dotted", linewidth=4)
 
     axes2.set_xscale('log')
-    axes2.set_yscale('log')
+    # axes2.set_yscale('log')
     axes2.set_xticks(x_data_int)
     axes2.set_xticklabels(x_data)
 
-    axes2.set_ylabel('log scale relative latency (ms/B)')
+    axes2.set_ylabel('latency (ms)')
     axes2.set_xlabel('log scale message size (B)')
 
-    patch01 = mpatches.Patch(color='brown', label='SS (left)')
-    patch02 = mpatches.Patch(color='royalblue', label='PRE (right)')
+    patch01 = mpatches.Patch(color='brown', label='SS')
+    patch02 = mpatches.Patch(color='royalblue', label='TPRE')
     soli = mlines.Line2D([], [], color='black',
                          linestyle='dotted', label='decryption')
     dott = mlines.Line2D([], [], color='black',
