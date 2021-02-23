@@ -56,18 +56,18 @@ def threshold():
 
     axes[0].grid(axis='y', color='0.8', zorder=0)
 
-    axes[0].bar(x_data - 0.175, enc, .35, color='lightcoral',
-                edgecolor='black', align='center', zorder=3)
-    axes[0].bar(x_data - 0.175, key, .35, color='brown', edgecolor='black',
+    axes[0].bar(x_data - 0.175, enc, .35, color='brown',
+                align='center', zorder=3)
+    axes[0].bar(x_data - 0.175, key, .35, color='brown',
                 bottom=enc, align='center', zorder=3)
-    axes[0].bar(x_data - 0.175, dec, .35, color='darkred', edgecolor='black',
+    axes[0].bar(x_data - 0.175, dec, .35, color='darksalmon',
                 bottom=tot, align='center', zorder=3)
 
-    axes[0].bar(x_data + 0.175, enc2, .35, color='lightsteelblue',
-                edgecolor='black', align='center', zorder=3)
-    axes[0].bar(x_data + 0.175, key2, .35, color='royalblue', edgecolor='black',
+    axes[0].bar(x_data + 0.175, enc2, .35, color='royalblue',
+                align='center', zorder=3)
+    axes[0].bar(x_data + 0.175, key2, .35, color='royalblue',
                 bottom=enc2, align='center', zorder=3)
-    axes[0].bar(x_data + 0.175, dec2, .35, color='darkblue', edgecolor='black',
+    axes[0].bar(x_data + 0.175, dec2, .35, color='lightsteelblue',
                 bottom=tot2, align='center', zorder=3)
 
     #axes[0].yticks(np.arange(0, 1200, 100))
@@ -116,13 +116,13 @@ def nodes():
     axes[1].grid(axis='y', color='0.8', zorder=0)
 
     axes[1].bar(x_data - 0.75, enc, 1.5, color='brown',
-                edgecolor='black', align='center', zorder=3)
-    axes[1].bar(x_data - 0.75, dec, 1.5, color='darkred', edgecolor='black',
+                align='center', zorder=3)
+    axes[1].bar(x_data - 0.75, dec, 1.5, color='darksalmon',
                 bottom=enc, align='center', zorder=3)
 
     axes[1].bar(x_data + 0.75, enc2, 1.5, color='royalblue',
-                edgecolor='black', align='center', zorder=3)
-    axes[1].bar(x_data + 0.75, dec2, 1.5, color='darkblue', edgecolor='black',
+                align='center', zorder=3)
+    axes[1].bar(x_data + 0.75, dec2, 1.5, color='lightsteelblue',
                 bottom=enc2, align='center', zorder=3)
 
     #axes[1].yticks(np.arange(0, 1200, 100))
@@ -133,13 +133,12 @@ def nodes():
 
     axes[1].set_ylim(0, 1450)
 
-    patch01 = mpatches.Patch(color='brown', label='SS')
-    patch02 = mpatches.Patch(color='royalblue', label='TPRE')
-    patch1 = mpatches.Patch(color='dimgray', label='decryption (dark)')
-    patch2 = mpatches.Patch(color='silver', label='keys distr (medium)')
-    patch3 = mpatches.Patch(color='whitesmoke', label='encryption (light)')
+    patch01 = mpatches.Patch(color='darksalmon', label='SS decryption')
+    patch02 = mpatches.Patch(color='brown', label='SS enc + caps dist')
+    patch1 = mpatches.Patch(color='lightsteelblue', label='TPRE decryption')
+    patch2 = mpatches.Patch(color='royalblue', label='TPRE enc + caps dist')
 
-    axes[1].legend(handles=[patch01, patch02, patch1, patch2, patch3])
+    axes[1].legend(handles=[patch01, patch02, patch1, patch2])
 
 
 def messages():
@@ -213,7 +212,7 @@ def messages():
     soli = mlines.Line2D([], [], color='black',
                          linestyle='dotted', label='decryption')
     dott = mlines.Line2D([], [], color='black',
-                         linestyle='solid', label='enc + keys distr')
+                         linestyle='solid', label='enc + caps dist')
 
     axes2.legend(handles=[patch01, patch02, dott, soli])
 
